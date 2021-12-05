@@ -1,0 +1,9 @@
+﻿  Source.cpp
+D:\ОАИП\C++\Labs\Lab12\HeaderZenevich.h(28,29): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab12\HeaderZenevich.h(46,36): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab12\HeaderZenevich.h(61,43): warning C4244: *=: преобразование "float" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab12\HeaderZenevich.h(70,57): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab12\HeaderZenevich.h(75,33): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab12\HeaderZenevich.h(77,32): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab12\Source.cpp(10,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Lab12.vcxproj -> D:\ОАИП\C++\Labs\Lab12\Debug\Lab12.exe

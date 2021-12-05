@@ -1,0 +1,8 @@
+﻿  Source.cpp
+D:\ОАИП\C++\Labs\Lab11\Source.cpp(33,21): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab11\Source.cpp(34,11): warning C4804: <=: небезопасное использование типа "bool" в операции
+D:\ОАИП\C++\Labs\Lab11\Source.cpp(35,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab11\Source.cpp(37,26): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab11\Source.cpp(41,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\ОАИП\C++\Labs\Lab11\Source.cpp(50,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+LINK : fatal error LNK1168: не удается открыть D:\ОАИП\C++\Labs\Lab11\Debug\Lab11.exe для записи

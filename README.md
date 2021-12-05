@@ -1,1 +1,1 @@
-# CppLabs
+# Hastily

@@ -1,1 +1,2 @@
 D:\ОАИП\C++\Labs\Lab13\x64\Debug\Lab13.exe
+C:\Users\asp1r\Documents\asp1rant3\Programming\GitHub\ОАИП\CppLabs\Lab13\x64\Debug\Lab13.exe

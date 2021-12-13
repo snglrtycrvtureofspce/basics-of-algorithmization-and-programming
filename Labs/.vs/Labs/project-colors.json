@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "78562ed8-6a30-4d88-84d2-7b4ec6bf2fda": {
+      "ProjectGuid": "78562ed8-6a30-4d88-84d2-7b4ec6bf2fda",
+      "DisplayName": "Lab14",
+      "ColorIndex": 0
+    },
+    "5fded653-a7b8-47c3-a138-12c379e54d9a": {
+      "ProjectGuid": "5fded653-a7b8-47c3-a138-12c379e54d9a",
+      "DisplayName": "Lab15",
+      "ColorIndex": 1
+    },
+    "9c92d3df-2b2d-43cc-bb47-ccaff1edc75f": {
+      "ProjectGuid": "9c92d3df-2b2d-43cc-bb47-ccaff1edc75f",
+      "DisplayName": "Lab16",
+      "ColorIndex": 2
+    },
+    "c6aa2ca2-d355-42dd-9aea-92798711405d": {
+      "ProjectGuid": "c6aa2ca2-d355-42dd-9aea-92798711405d",
+      "DisplayName": "Lab17",
+      "ColorIndex": 3
+    },
+    "8e35ef11-5f6f-4c7f-afbb-a8e5686875e1": {
+      "ProjectGuid": "8e35ef11-5f6f-4c7f-afbb-a8e5686875e1",
+      "DisplayName": "Lab18",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

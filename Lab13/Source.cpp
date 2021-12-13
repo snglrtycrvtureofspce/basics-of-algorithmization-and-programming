@@ -4,8 +4,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string>
+#include <iterator>
 #include <cctype>
-using namespace std;
+
 
 int main() {
 	SetConsoleCP(1251);
@@ -14,19 +15,19 @@ int main() {
 		cout << i << '\t' << char(i) << '\n';
 	}*/
 	int mission;
-	cout << "Введите задание: ";
-	cin >> mission;
+	std::cout << "Введите задание: ";
+	std::cin >> mission;
 	switch (mission) {
 	case(1): {
 		const int SIZE = 100;
 		char findsymbol = 0, str[SIZE]{};
-		cin.ignore();
-		cin.getline(str, SIZE);
-		cout << "Введите символ который хотите найти: ";
-		cin >> findsymbol;
+		std::cin.ignore();
+		std::cin.getline(str, SIZE);
+		std::cout << "Введите символ который хотите найти: ";
+		std::cin >> findsymbol;
 		for (int i = 0; i < strlen(str); i++) {
 			if ((str[i]) == findsymbol) {
-				cout << "Найден символ " << findsymbol << "\tв строке: " << i << '\n';
+				std::cout << "Найден символ " << findsymbol << "\tв строке: " << i << '\n';
 			}
 		}
 		break;
@@ -34,39 +35,56 @@ int main() {
 	case(2): {
 		const int SIZE = 100;
 		char symbol = 0, str[SIZE]{};
-		cin.ignore();
-		cin.getline(str, SIZE);
-		cout << "Введите символ: ";
-		cin >> symbol;
+		std::cin.ignore();
+		std::cin.getline(str, SIZE);
+		std::cout << "Введите символ: ";
+		std::cin >> symbol;
 		for (int i = 0; i < strlen(str); i++) {
-			cout << str[i] << symbol;
+			std::cout << str[i] << symbol;
 		}
 		break;
 	}
 	case(3): {
 		const int SIZE = 100;
 		char str[SIZE]{};
-		cin.ignore();
-		cin.getline(str, SIZE);
-		cout << strlen(str) << '\n';
+		std::cin.ignore();
+		std::cin.getline(str, SIZE);
+		std::cout << strlen(str) << '\n';
 		break;
 	}
 	case(4): {
 		const int SIZE = 100;
 		int count = 0;
 		char consonants[]{ 'a', 'e', 'i', 'o', 'u', 'y', '\0'}, str[SIZE]{};
-		cin.ignore();
-		cin.getline(str, SIZE);
+		std::cin.ignore();
+		std::cin.getline(str, SIZE);
 		for (int i = 0; i < strlen(str); i++) {
-			if (str[i] == consonants[i]) {
+			for (int j = 0; j < sizeof(consonants); j++) {
+				if (str[i] == consonants[j]) {
+					count++;
+					break;
+				}
+			}
+		}
+		std::cout << "Количество: " << count << std::endl;
+		break;
+	}
+	case(5): {
+		const int SIZE = 100;
+		int count = 0;
+		char str[SIZE]{};
+		std::cin.ignore();
+		std::cin.getline(str, SIZE);
+		for (int i = 0; i < strlen(str); i++) {
+			if (str[i] == str[i - 1]) {
 				count++;
 			}
 		}
-		cout << "Количество: " << count << endl;
+		std::cout << "Количество: " << count << std::endl;
 		break;
 	}
 	default: {
-		cout << "Вы ввели неправильный номер" << endl;
+		std::cout << "Вы ввели неправильный номер" << std::endl;
 		break;
 	}
 	}

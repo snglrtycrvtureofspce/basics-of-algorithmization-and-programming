@@ -1,3 +1,0 @@
-/home/asp1rant3/Документы/asp1rant3/Programming/GitHub/ОАИП/CppLabs/Lab14/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/asp1rant3/Документы/asp1rant3/Programming/GitHub/ОАИП/CppLabs/Lab14/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/asp1rant3/Документы/asp1rant3/Programming/GitHub/ОАИП/CppLabs/Lab14/cmake-build-debug/CMakeFiles/Lab14.dir

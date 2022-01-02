@@ -1,3 +1,0 @@
-﻿  Source.cpp
-D:\ОАИП\C++\Labs\Lab10\chast2\Source.cpp(9,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  chast2.vcxproj -> D:\ОАИП\C++\Labs\Lab10\Debug\chast2.exe

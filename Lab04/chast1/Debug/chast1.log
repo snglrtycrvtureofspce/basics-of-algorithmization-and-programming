@@ -1,3 +1,0 @@
-﻿  Source.cpp
-F:\Visual Studio\C++\Labs\Lab04\chast1\Source.cpp(19,8): warning C4804: <: небезопасное использование типа "bool" в операции
-  chast1.vcxproj -> F:\Visual Studio\C++\Labs\Lab04\Debug\chast1.exe

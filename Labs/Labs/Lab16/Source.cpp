@@ -18,7 +18,7 @@ struct train {
 
 int main() {
     setlocale(LC_ALL, "");
-    int count;
+    int count = 0;
     do {
         cout << "Сколько на вашем континенте государств? - ";
         cin >> count;
@@ -27,7 +27,7 @@ int main() {
         }
     } while (1 > count);
     state* continent = new state[count];
-    if (continent == nullptr) {
+    if (continent == NULL) {
         cout << "Память друг, память.." << endl;
         return 0;
     }
@@ -98,5 +98,6 @@ int main() {
         cout << "Время**: " << mas[i].timeGO << endl;
         cout << "_________________________________________________\n";
     }
+    system("pause");
     return 0;
 }

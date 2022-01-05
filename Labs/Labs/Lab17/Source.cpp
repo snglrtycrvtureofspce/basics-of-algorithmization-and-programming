@@ -76,15 +76,17 @@ int main() {
         }
     }
 
-    for (int i = 0; i < count - 1; i++) {
-        for (int j = 0; i < count - i; i++) {
+    /* for (int i = 0; i < count; i++) {
+        for (int j = 0; j < count - 1; j++) {
             if (Firm[j].age > Firm[j + 1].age) {
-                char t = Firm[j].age;
-                Firm[j].age = Firm[j + 1].age;
-                Firm[j + 1].age = t;
+                swap(Firm[j].age, Firm[j + 1].age);
             }
         }
     }
+
+    for (int i = 0; i < count; i++) {
+        cout << Firm[i].age << endl;
+    }*/
 
     delete[] Firm;
     Firm = NULL;

@@ -60,6 +60,7 @@ public:
 		cin >> valuecategoryofFirm;
 		categoryoffirm = valuecategoryofFirm;
 	}
+
 	char GetcategoryofFirm() {
 		return categoryoffirm;
 	}
@@ -172,4 +173,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}
+} 

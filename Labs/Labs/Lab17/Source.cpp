@@ -1,9 +1,11 @@
 #include <iostream>
 #include <Windows.h>
+#include "SortMethods.h"
 
 using namespace std;
 
-struct Worker {
+struct Worker
+{
 	int age;
     double salary;
 	double weight;
@@ -11,85 +13,172 @@ struct Worker {
 	bool sex;
 };
 
-int main() {
-	setlocale(LC_ALL, "");
+int main()
+{
+    setlocale(LC_ALL, "");
 
     int count = 0;
-    do {
-        cout << "Сколько у вас работников? - ";
+    do
+    {
+        cout << "How many employees do you have? - ";
         cin >> count;
-        if (count < 1) {
-            cout << "Количество работников должно быть больше нуля" << endl;
+        if (count < 1)
+        {
+            cout << "The number of employees must be greater than zero" << endl;
         }
     } while (count < 1);
     Worker* Firm = new Worker[count];
-    if (Firm == NULL) {
-        cout << "Память друг, память.." << endl;
+    if (Firm == nullptr)
+    {
+        cout << "Memory friend, memory .." << endl;
         return 0;
     }
-    else {
+    else
+    {
         cout << endl;
     }
 
-    for (int i = 0, workerInfo = 1; i < count; i++) {
+    for (int i = 0, workerInfo = 1; i < count; i++)
+    {
         cout << "______________________________________________________" << endl;
-        cout << "Введите возраст работника: ";
+        cout << "Enter the employee's age: ";
         cin >> Firm[i].age;
-        cout << "\nВведите вес работника: ";
+        cout << "\nEnter the worker's weight: ";
         cin >> Firm[i].weight;
-        cout << "\nВведите имя работника: ";
+        cout << "\nEnter the name of the worker: ";
         cin >> Firm[i].name;
-        cout << "\nВведите пол работника: (0 - Женский 1 - Мужской): ";
+        cout << "\nEnter the gender of the employee: (0 - Female 1 - Male): ";
         cin >> Firm[i].sex;
-        cout << "\nВведите оклад работника: ";
+        cout << "\nEnter the employee's salary: ";
         cin >> Firm[i].salary;
-        if (count > 1) {
+        if (count > 1)
+        {
             cout << "______________________________________________________" << endl;
             workerInfo++;
-            cout << "Описание " << workerInfo << " работника:" << endl;
+            cout << "Description " << workerInfo << " employee:" << endl;
             cout << "______________________________________________________" << endl;
         }
-        else {
+        else
+        {
             cout << endl;
         }
     }
-    cout << "В вашей фирме " << count << " сотрудников" << "\nИх описание: " << endl;
-    for (int i = 0; i < count; i++) {
-        int workerInfo = 1;
-        cout << "Возраст: " << Firm[i].age << endl;
-        cout << "Вес: " << Firm[i].weight << endl;
-        cout << "Имя: " << Firm[i].name << endl;
-        if (Firm[i].sex == false) {
-            cout << "Пол: Женский" << endl;
+    cout << "______________________________________________________" << endl;
+    cout << "In your firm " << count << " employees" << "\nTheir description: " << endl;
+    cout << "______________________________________________________" << endl;
+    for (int i = 0, workerInfo = 1; i < count; i++)
+    {
+        cout << "Age: " << Firm[i].age << endl;
+        cout << "Weight: " << Firm[i].weight << endl;
+        cout << "Name: " << Firm[i].name << endl;
+        if (Firm[i].sex == false)
+        {
+            cout << "Gender: Female" << endl;
         }
-        else {
-            cout << "Пол: Мужской" << endl;
+        else
+        {
+            cout << "Gender: Male" << endl;
         }
-        cout << "Оклад: " << Firm[i].salary << endl;
-        if (count > 1) {
+        cout << "Salary: " << Firm[i].salary << endl;
+        if (count > 1)
+        {
             cout << "______________________________________________________" << endl;
-            cout << "Описание " << workerInfo + 1 << " работника:" << endl;
+            workerInfo++;
+            cout << "Description " << workerInfo << " employee:" << endl;
             cout << "______________________________________________________" << endl;
         }
-        else {
+        else
+        {
             cout << endl;
         }
     }
 
-    /* for (int i = 0; i < count; i++) {
-        for (int j = 0; j < count - 1; j++) {
-            if (Firm[j].age > Firm[j + 1].age) {
-                swap(Firm[j].age, Firm[j + 1].age);
+    cout << "Sorting ... " << endl;
+    char p = '0';
+    cout << "0 - Close program\n1 - Sort for name\n2 - Sort for salary" << endl;
+    cin >> p;
+    switch (p) {
+    case '0':
+    {
+        cout << "End of the program .." << endl;
+        break;
+    }
+    case '1':
+    {
+        cout << "Sort for name: " << endl;
+        for (int i = 0; i < count; i++)
+        {
+            Worker nw = Firm[i];
+            int q = i;
+            for (int j = i - 1; j > -1 && strcmp(nw.name, Firm[j].name) < 0; j--)
+            {
+                Firm[j + 1] = Firm[j];
+                Firm[j] = nw;
             }
         }
+        break;
+    }
+    case '2':
+    {
+        cout << "Sort for salary:" << endl;
+        for (int i = count / 2; i > 0; i = i / 2)
+        {
+            for (int j = 0; j < count - i; j++)
+            {
+                for (int k = j; k > -1; k = k - i)
+                {
+                    if (Firm[k].salary > Firm[i + k].salary)
+                    {
+                        Worker nw = Firm[k];
+                        Firm[k] = Firm[i + k];
+                        Firm[i + k] = nw;
+                    }
+                    else
+                    {
+                        k = 0;
+                    }
+                }
+            }
+        }
+        break;
+    }
+    default: {
+        cout << "Wrong number!" << endl;
+        break;
+    }
     }
 
-    for (int i = 0; i < count; i++) {
-        cout << Firm[i].age << endl;
-    }*/
+    cout << "SOOOOOOOOOOOOOOOOOORTED" << endl;
+    cout << "In your firm " << count << " employees" << "\nTheir sorted description: " << endl;
+    for (int i = 0; i < count; i++)
+    {
+        int workerInfo = 1;
+        cout << "Age: " << Firm[i].age << endl;
+        cout << "Weight: " << Firm[i].weight << endl;
+        cout << "Name: " << Firm[i].name << endl;
+        if (Firm[i].sex == false)
+        {
+            cout << "Gender: Female" << endl;
+        }
+        else
+        {
+            cout << "Gender: Male" << endl;
+        }
+        cout << "Salary: " << Firm[i].salary << endl;
+        if (count > 1)
+        {
+            cout << "______________________________________________________" << endl;
+            cout << "Description " << workerInfo + 1 << " employee:" << endl;
+            cout << "______________________________________________________" << endl;
+        }
+        else
+        {
+            cout << endl;
+        }
+    }
 
     delete[] Firm;
-    Firm = NULL;
+    Firm = nullptr;
 
     system("pause");
     return 0;

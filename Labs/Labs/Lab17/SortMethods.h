@@ -3,6 +3,28 @@
 
 using namespace std;
 
+void swap(int& first, int& second) {
+	int t = first;
+	first = second;
+	second = t;
+}
+
+int minimumFrom(int* m, int position, int length) {
+	int minIndex = position;
+	for (int i = position + 1; i < length; i++){
+		if (m[i] < m[minIndex]) {
+			minIndex = i;
+		}
+	}
+	return minIndex;
+}
+
+void selectionSort(int* m, int length) {
+	for (int i = 0; i < length - 1; i++){
+		swap(m[i], m[minimumFrom(m, i, length)]);
+	}
+}
+
 void BubbleSort(int* m, int n) { // метод пузырька
 	for (int i = 0; i < n - 1; i++){
 		for (int j = 0; i < n - i; i++){

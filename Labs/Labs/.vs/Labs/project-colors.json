@@ -110,7 +110,12 @@
       "ProjectGuid": "1a952fb8-f075-4551-bdf9-e44795fb0467",
       "DisplayName": "Lab17",
       "ColorIndex": 5
+    },
+    "20bcebf5-e851-4b41-94f6-9a9bbbc2adf3": {
+      "ProjectGuid": "20bcebf5-e851-4b41-94f6-9a9bbbc2adf3",
+      "DisplayName": "Lab18",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

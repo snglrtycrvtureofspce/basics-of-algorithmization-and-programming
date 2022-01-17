@@ -18,10 +18,10 @@ protected:
 	double L;
 };
 
-class rectangle : line
+class rectangle : line//////////////////////////////
 {
 public:
-	rectangle(double L2) : line(L)
+	rectangle(double L) : line(L)////////////////////////////////////
 	{
 		L2 = L2;
 		this->p = 2 * (L + L2);
@@ -30,12 +30,12 @@ public:
 	void show()
 	{
 		line::show();
-		cout << "Периметр: " << this->p << endl;
+		cout << "Периметр: " << perimetr() << endl;
 		cout << "Площадь: " << this->s << endl;
 	}
-	void perimetr()
+	double perimetr()
 	{
-		auto P = 2 * (line::L + L2);
+		return 2 * (line::L + L2);
 	}
 	void square()
 	{

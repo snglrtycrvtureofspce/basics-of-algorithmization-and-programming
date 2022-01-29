@@ -41,12 +41,28 @@ namespace Lab25
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::CheckBox^ checkBox1;
+
 	private: System::Windows::Forms::CheckBox^ checkBox2;
 	private: System::Windows::Forms::CheckBox^ checkBox3;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::RadioButton^ radioButton2;
 	private: System::Windows::Forms::RadioButton^ radioButton1;
+	private: System::Windows::Forms::TextBox^ textBox1;
+
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::Button^ button8;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::TextBox^ textBox8;
+	private: System::Windows::Forms::TextBox^ textBox9;
+	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::Button^ button10;
 
 
 
@@ -73,12 +89,26 @@ namespace Lab25
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -131,25 +161,14 @@ namespace Lab25
 			this->label1->Size = System::Drawing::Size(0, 13);
 			this->label1->TabIndex = 5;
 			// 
-			// checkBox1
-			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(87, 12);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(96, 17);
-			this->checkBox1->TabIndex = 6;
-			this->checkBox1->Text = L"Grey/DarkRed";
-			this->checkBox1->UseVisualStyleBackColor = true;
-			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox1_CheckedChanged);
-			// 
 			// checkBox2
 			// 
 			this->checkBox2->AutoSize = true;
 			this->checkBox2->Location = System::Drawing::Point(87, 35);
 			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(82, 17);
+			this->checkBox2->Size = System::Drawing::Size(59, 17);
 			this->checkBox2->TabIndex = 7;
-			this->checkBox2->Text = L"Aquamarine";
+			this->checkBox2->Text = L"Sienna";
 			this->checkBox2->UseVisualStyleBackColor = true;
 			this->checkBox2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox2_CheckedChanged);
 			// 
@@ -158,9 +177,9 @@ namespace Lab25
 			this->checkBox3->AutoSize = true;
 			this->checkBox3->Location = System::Drawing::Point(87, 58);
 			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(47, 17);
+			this->checkBox3->Size = System::Drawing::Size(50, 17);
 			this->checkBox3->TabIndex = 8;
-			this->checkBox3->Text = L"Pink";
+			this->checkBox3->Text = L"Coral";
 			this->checkBox3->UseVisualStyleBackColor = true;
 			this->checkBox3->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox3_CheckedChanged);
 			// 
@@ -181,10 +200,10 @@ namespace Lab25
 			this->radioButton2->AutoSize = true;
 			this->radioButton2->Location = System::Drawing::Point(7, 45);
 			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(147, 17);
+			this->radioButton2->Size = System::Drawing::Size(113, 17);
 			this->radioButton2->TabIndex = 1;
 			this->radioButton2->TabStop = true;
-			this->radioButton2->Text = L"Technology of application";
+			this->radioButton2->Text = L"Group and nubmer";
 			this->radioButton2->UseVisualStyleBackColor = true;
 			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton2_CheckedChanged);
 			// 
@@ -200,15 +219,162 @@ namespace Lab25
 			this->radioButton1->UseVisualStyleBackColor = true;
 			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton1_CheckedChanged);
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(87, 355);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(100, 20);
+			this->textBox1->TabIndex = 10;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(299, 353);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 12;
+			this->button5->Text = L"Calculate";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(380, 355);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(166, 20);
+			this->textBox3->TabIndex = 13;
+			this->textBox3->Text = L"Result";
+			this->textBox3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox3_TextChanged);
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(552, 353);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(75, 23);
+			this->button6->TabIndex = 14;
+			this->button6->Text = L"Clear";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(446, 35);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(100, 20);
+			this->textBox4->TabIndex = 15;
+			this->textBox4->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox4_TextChanged);
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(552, 33);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(75, 23);
+			this->button7->TabIndex = 16;
+			this->button7->Text = L"Calculate";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(633, 35);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(100, 20);
+			this->textBox5->TabIndex = 17;
+			this->textBox5->Text = L"Result";
+			this->textBox5->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox5_TextChanged);
+			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(739, 33);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(75, 23);
+			this->button8->TabIndex = 18;
+			this->button8->Text = L"Clear";
+			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(193, 355);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(100, 20);
+			this->textBox2->TabIndex = 19;
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(446, 149);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(100, 20);
+			this->textBox6->TabIndex = 20;
+			this->textBox6->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox6_TextChanged);
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(552, 149);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(100, 20);
+			this->textBox7->TabIndex = 21;
+			this->textBox7->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox7_TextChanged);
+			// 
+			// textBox8
+			// 
+			this->textBox8->Location = System::Drawing::Point(658, 149);
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->Size = System::Drawing::Size(100, 20);
+			this->textBox8->TabIndex = 22;
+			this->textBox8->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox8_TextChanged);
+			// 
+			// textBox9
+			// 
+			this->textBox9->Location = System::Drawing::Point(552, 181);
+			this->textBox9->Name = L"textBox9";
+			this->textBox9->Size = System::Drawing::Size(100, 20);
+			this->textBox9->TabIndex = 23;
+			this->textBox9->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox9_TextChanged);
+			// 
+			// button9
+			// 
+			this->button9->Location = System::Drawing::Point(471, 178);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(75, 25);
+			this->button9->TabIndex = 24;
+			this->button9->Text = L"Calculate";
+			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &MyForm::button9_Click);
+			// 
+			// button10
+			// 
+			this->button10->Location = System::Drawing::Point(658, 179);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(75, 23);
+			this->button10->TabIndex = 25;
+			this->button10->Text = L"Clear";
+			this->button10->UseVisualStyleBackColor = true;
+			this->button10->Click += gcnew System::EventHandler(this, &MyForm::button10_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(976, 465);
+			this->ClientSize = System::Drawing::Size(872, 478);
+			this->Controls->Add(this->button10);
+			this->Controls->Add(this->button9);
+			this->Controls->Add(this->textBox9);
+			this->Controls->Add(this->textBox8);
+			this->Controls->Add(this->textBox7);
+			this->Controls->Add(this->textBox6);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->button8);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->button7);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->button6);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->checkBox3);
 			this->Controls->Add(this->checkBox2);
-			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
@@ -235,7 +401,7 @@ namespace Lab25
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (this->BackColor == SystemColors::ButtonFace)
 		{
-			this->BackColor = Color::DarkRed;
+			this->BackColor = Color::Aquamarine;
 		}
 		else
 		{
@@ -245,35 +411,138 @@ namespace Lab25
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
-	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-		if (this->BackColor == Color::DarkRed)
-		{
-			this->BackColor = SystemColors::ButtonFace;
-		}
-		else
-		{
-			this->BackColor = Color::DarkRed;
-		}
-		this->checkBox2->CheckState = CheckState::Unchecked;
-		this->checkBox3->CheckState = CheckState::Unchecked;
-	}
+
 	private: System::Void checkBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-		this->BackColor = Color::Aquamarine;
-		this->checkBox1->CheckState = CheckState::Unchecked;
+		this->BackColor = Color::Sienna;
+
 		this->checkBox3->CheckState = CheckState::Unchecked;
 	}
 	private: System::Void checkBox3_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-		this->BackColor = Color::Pink;
-		this->checkBox1->CheckState = CheckState::Unchecked;
+		this->BackColor = Color::Coral;
 		this->checkBox2->CheckState = CheckState::Unchecked;
 	}
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void radioButton1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-		this->Text = "Aleksandr Zenevich";
+		this->Text = "Aleksandr Zenevich Olegovych";
 	}
 	private: System::Void radioButton2_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-		this->Text = ".NET Application";
+		this->Text = "T-091 ¹7";
+	}
+	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			double a = Convert::ToDouble(this->textBox1->Text);
+			double b = Convert::ToDouble(this->textBox2->Text);
+			if (b == 0 || (a / b) < 0)
+			{
+				MessageBox::Show("Attempt to divide by zero or take the root of a negative number.", "Error!");
+				button6_Click(sender, System::EventArgs::Empty);
+			}
+			else
+			{
+				double c = Math::Sqrt(a / b);
+				this->textBox3->Clear();
+				this->textBox3->Text = c.ToString();
+				this->Text = c.ToString();
+			}
+		}
+		catch (System::FormatException^ e)
+		{
+			MessageBox::Show(e->Message->ToString(), "Data format error!");
+			button6_Click(sender, System::EventArgs::Empty);
+		}
+	}
+
+	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox1->Clear();
+		this->textBox2->Clear();
+		this->textBox3->Clear();
+		this->textBox3->Text = "Result";
+	}
+	private: System::Void textBox1_MouseClick(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+		this->textBox1->Clear();
+	}
+	private: System::Void textBox2_TextChanged(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+		this->textBox2->Clear();
+	}
+	private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox4->Clear();
+		this->textBox5->Clear();
+		this->textBox5->Text = "Result";
+	}
+	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			double h = Convert::ToDouble(this->textBox4->Text);
+			if (h < 0)
+			{
+				MessageBox::Show("Height less than zero.", "Error!");
+				button8_Click(sender, System::EventArgs::Empty);
+			}
+			else
+			{
+				double g = 9.8;
+				double res = Math::Sqrt(2 * (h / g));
+				this->textBox5->Clear();
+				this->textBox5->Text = res.ToString();
+				this->Text = res.ToString() + " (ñ)";
+			}
+		}
+		catch (System::FormatException^ e)
+		{
+			MessageBox::Show(e->Message->ToString(), "Data format error!");
+			button8_Click(sender, System::EventArgs::Empty);
+		}
+	}
+	private: System::Void textBox4_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox5_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+	private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox7_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox8_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox9_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			double z = Convert::ToDouble(this->textBox6->Text);
+			double x = Convert::ToDouble(this->textBox7->Text);
+			double c = Convert::ToDouble(this->textBox8->Text);
+			if ((z && x && c) < 0)
+			{
+				MessageBox::Show("Height less than zero.", "Error!");
+				button9_Click(sender, System::EventArgs::Empty);
+			}
+			else
+			{
+				double rez = Math::Sqrt(z * x * c) / Math::Sqrt(z);
+				this->textBox9->Clear();
+				this->textBox9->Text = rez.ToString();
+				this->Text = rez.ToString();
+			}
+		}
+		catch (System::FormatException^ e)
+		{
+			MessageBox::Show(e->Message->ToString(), "Data format error!");
+			button9_Click(sender, System::EventArgs::Empty);
+		}
+	}
+
+	private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox6->Clear();
+		this->textBox7->Clear();
+		this->textBox8->Clear();
+		this->textBox9->Text = "Result";
 	}
 	};
 }

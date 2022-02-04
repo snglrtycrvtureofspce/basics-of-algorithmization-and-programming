@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab23\Source.cpp(11,16): warning C4566: символ, представленный универсальным именем символа "\u02D9", невозможно представить в текущей кодовой странице (1251)
+  Lab23.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab23.exe

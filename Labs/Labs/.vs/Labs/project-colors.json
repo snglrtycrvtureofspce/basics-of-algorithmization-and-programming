@@ -140,7 +140,22 @@
       "ProjectGuid": "20aa3d83-e489-4ee8-9252-b2eb15f2a5ec",
       "DisplayName": "Lab27",
       "ColorIndex": 10
+    },
+    "d3ef8b25-8b99-44a5-a6a4-f077bf4c941a": {
+      "ProjectGuid": "d3ef8b25-8b99-44a5-a6a4-f077bf4c941a",
+      "DisplayName": "Lab19",
+      "ColorIndex": 11
+    },
+    "b89ae173-b807-43d4-87d8-5c769579dfa7": {
+      "ProjectGuid": "b89ae173-b807-43d4-87d8-5c769579dfa7",
+      "DisplayName": "Lab23",
+      "ColorIndex": 12
+    },
+    "9396a503-07eb-4466-8570-cf00a0c0a436": {
+      "ProjectGuid": "9396a503-07eb-4466-8570-cf00a0c0a436",
+      "DisplayName": "Lab24",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 14
 }

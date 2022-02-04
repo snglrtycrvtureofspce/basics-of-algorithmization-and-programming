@@ -130,7 +130,12 @@
       "ProjectGuid": "779558c3-dfe2-4f8e-a4d3-5a1f0b26e8b4",
       "DisplayName": "Lab25",
       "ColorIndex": 8
+    },
+    "41d2d876-815f-4dfa-8c9c-3e30c8a71ac7": {
+      "ProjectGuid": "41d2d876-815f-4dfa-8c9c-3e30c8a71ac7",
+      "DisplayName": "Lab26",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 10
 }

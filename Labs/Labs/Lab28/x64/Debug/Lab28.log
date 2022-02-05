@@ -1,0 +1,7 @@
+﻿  MyForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.h(119): warning C4309: инициализация: усечение константного значения
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.h(119): message : Сообщение диагностики возникло при импорте типа "Microsoft::Office::Interop::Word::_Document " из сборки "Interop.Microsoft.Office.Interop.Word.8.7, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null".
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.h(119): message : Сообщение диагностики возникло при импорте типа "Microsoft::Office::Interop::Word::Document " из сборки "Interop.Microsoft.Office.Interop.Word.8.7, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null".
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.cpp(6,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Lab28.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab28.exe

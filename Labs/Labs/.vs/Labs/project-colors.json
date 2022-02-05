@@ -155,7 +155,17 @@
       "ProjectGuid": "9396a503-07eb-4466-8570-cf00a0c0a436",
       "DisplayName": "Lab24",
       "ColorIndex": 13
+    },
+    "97d4254e-95ac-4bda-bb9e-badc8e430c81": {
+      "ProjectGuid": "97d4254e-95ac-4bda-bb9e-badc8e430c81",
+      "DisplayName": "Lab28",
+      "ColorIndex": 14
+    },
+    "8445a089-ae58-40fe-8974-c0925f61884f": {
+      "ProjectGuid": "8445a089-ae58-40fe-8974-c0925f61884f",
+      "DisplayName": "Lab28",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 0
 }

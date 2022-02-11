@@ -63,6 +63,11 @@ namespace Lab25
 	private: System::Windows::Forms::TextBox^ textBox9;
 	private: System::Windows::Forms::Button^ button9;
 	private: System::Windows::Forms::Button^ button10;
+	private: System::Windows::Forms::TextBox^ textBox10;
+	private: System::Windows::Forms::TextBox^ textBox11;
+	private: System::Windows::Forms::TextBox^ textBox12;
+	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::Button^ button12;
 
 
 
@@ -84,6 +89,7 @@ namespace Lab25
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -109,6 +115,11 @@ namespace Lab25
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->button10 = (gcnew System::Windows::Forms::Button());
+			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
+			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->button12 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -352,11 +363,60 @@ namespace Lab25
 			this->button10->UseVisualStyleBackColor = true;
 			this->button10->Click += gcnew System::EventHandler(this, &MyForm::button10_Click);
 			// 
+			// textBox10
+			// 
+			this->textBox10->Location = System::Drawing::Point(446, 248);
+			this->textBox10->Name = L"textBox10";
+			this->textBox10->Size = System::Drawing::Size(100, 20);
+			this->textBox10->TabIndex = 26;
+			this->textBox10->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox10_TextChanged);
+			// 
+			// textBox11
+			// 
+			this->textBox11->Location = System::Drawing::Point(552, 248);
+			this->textBox11->Name = L"textBox11";
+			this->textBox11->Size = System::Drawing::Size(100, 20);
+			this->textBox11->TabIndex = 27;
+			this->textBox11->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox11_TextChanged);
+			// 
+			// textBox12
+			// 
+			this->textBox12->Location = System::Drawing::Point(658, 248);
+			this->textBox12->Name = L"textBox12";
+			this->textBox12->Size = System::Drawing::Size(100, 20);
+			this->textBox12->TabIndex = 28;
+			this->textBox12->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox12_TextChanged);
+			// 
+			// button11
+			// 
+			this->button11->Location = System::Drawing::Point(471, 274);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(75, 23);
+			this->button11->TabIndex = 29;
+			this->button11->Text = L"Calculate";
+			this->button11->UseVisualStyleBackColor = true;
+			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
+			// 
+			// button12
+			// 
+			this->button12->Location = System::Drawing::Point(658, 274);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(75, 23);
+			this->button12->TabIndex = 30;
+			this->button12->Text = L"Clear";
+			this->button12->UseVisualStyleBackColor = true;
+			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(872, 478);
+			this->Controls->Add(this->button12);
+			this->Controls->Add(this->button11);
+			this->Controls->Add(this->textBox12);
+			this->Controls->Add(this->textBox11);
+			this->Controls->Add(this->textBox10);
 			this->Controls->Add(this->button10);
 			this->Controls->Add(this->button9);
 			this->Controls->Add(this->textBox9);
@@ -380,8 +440,10 @@ namespace Lab25
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Lab25";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
@@ -543,6 +605,52 @@ namespace Lab25
 		this->textBox7->Clear();
 		this->textBox8->Clear();
 		this->textBox9->Text = "Result";
+	}
+	private: System::Void textBox10_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox11_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox12_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			double z = Convert::ToDouble(this->textBox10->Text);
+			double x = Convert::ToDouble(this->textBox11->Text);
+			if ((z && x) < 0)
+			{
+				MessageBox::Show("Height less than zero.", "Error!");
+				button9_Click(sender, System::EventArgs::Empty);
+			}
+			else
+			{
+				if(z > x)
+				{
+					this->textBox10->Clear();
+					this->textBox11->Clear();
+					this->textBox12->Text = "a > b";
+				}
+				if(z < x)
+				{
+					this->textBox12->Text = "a < b";
+					MessageBox::Show("a < b");
+				}
+				else
+				{
+					this->textBox12->Text = "a = b";
+				}
+			}
+		}
+		catch (System::FormatException^ e)
+		{
+			MessageBox::Show(e->Message->ToString(), "Data format error!");
+			button9_Click(sender, System::EventArgs::Empty);
+		}
+	}
+	private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox10->Clear();
+		this->textBox11->Clear();
+		this->textBox12->Text = "Result";
 	}
 	};
 }

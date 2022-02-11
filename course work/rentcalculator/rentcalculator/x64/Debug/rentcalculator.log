@@ -1,0 +1,6 @@
+﻿  MyForm.cpp
+  main.cpp
+C:\Users\asp1r\Desktop\course work\rentcalculator\rentcalculator\main.cpp(5,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
+  Создание кода...
+  main.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  rentcalculator.vcxproj -> C:\Users\asp1r\Desktop\course work\rentcalculator\x64\Debug\rentcalculator.exe

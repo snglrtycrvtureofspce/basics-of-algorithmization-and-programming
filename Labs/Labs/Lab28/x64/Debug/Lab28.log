@@ -13,5 +13,3 @@ C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationA
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.h(160,1): error C2061: синтаксическая ошибка: идентификатор "Expection"
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.h(160,4): error C2310: в блоках catch должен быть указан один тип
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab28\MyForm.cpp(6,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  Создание кода...

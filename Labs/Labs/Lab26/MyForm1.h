@@ -73,6 +73,7 @@ namespace Lab26 {
 			this->Controls->Add(this->textBox1);
 			this->Name = L"MyForm1";
 			this->Text = L"MyForm1";
+			this->Load += gcnew System::EventHandler(this, &MyForm1::MyForm1_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -80,6 +81,8 @@ namespace Lab26 {
 #pragma endregion
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 		
+	}
+	private: System::Void MyForm1_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

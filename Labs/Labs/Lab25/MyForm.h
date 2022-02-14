@@ -615,25 +615,26 @@ namespace Lab25
 	private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
 		try
 		{
-			double z = Convert::ToDouble(this->textBox10->Text);
-			double x = Convert::ToDouble(this->textBox11->Text);
-			if ((z && x) < 0)
+			double a = Convert::ToDouble(this->textBox10->Text);
+			double b = Convert::ToDouble(this->textBox11->Text);
+			if (a < 0 && b < 0)/////////////////////////////////////////////
 			{
 				MessageBox::Show("Height less than zero.", "Error!");
 				button9_Click(sender, System::EventArgs::Empty);
 			}
 			else
 			{
-				if(z > x)
+				if(a > b)
 				{
 					this->textBox10->Clear();
 					this->textBox11->Clear();
 					this->textBox12->Text = "a > b";
 				}
-				if(z < x)
+				else if(a < b)
 				{
+					this->textBox10->Clear();
+					this->textBox11->Clear();
 					this->textBox12->Text = "a < b";
-					MessageBox::Show("a < b");
 				}
 				else
 				{

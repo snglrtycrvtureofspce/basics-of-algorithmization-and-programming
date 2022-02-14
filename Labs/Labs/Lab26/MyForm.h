@@ -103,6 +103,7 @@ namespace Lab26 {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(265, 220);
 			this->dataGridView1->TabIndex = 2;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
 			// 
 			// chart1
 			// 
@@ -303,9 +304,9 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	try
 	{
 		double x = Convert::ToDouble(this->textBox2->Text);
-		if (x < 0)
+		if (x < 0 || x > 5)
 		{
-			MessageBox::Show("Height less than zero.", "Error!");
+			MessageBox::Show("Height less than diapazon.", "Error!");
 			button3_Click(sender, System::EventArgs::Empty);
 		}
 		else
@@ -328,6 +329,8 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	this->textBox2->Clear();
 	this->textBox3->Clear();
 	this->textBox3->Text = "Result";
+}
+private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
 };
 }

@@ -114,6 +114,7 @@ namespace Lab26 {
 			this->chart1->Location = System::Drawing::Point(283, 41);
 			this->chart1->Name = L"chart1";
 			series1->ChartArea = L"ChartArea1";
+			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Spline;
 			series1->Legend = L"Legend1";
 			series1->Name = L"Series1";
 			this->chart1->Series->Add(series1);
@@ -199,7 +200,7 @@ namespace Lab26 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(636, 448);
+			this->ClientSize = System::Drawing::Size(830, 522);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->button2);
@@ -274,7 +275,7 @@ namespace Lab26 {
 		chart1->Series["Series1"]->XValueMember = "Plant name";
 		chart1->Series["Series1"]->YValueMembers = "Maximum altitude in meters";
 		chart1->Titles->Add("Maximum height in meters per month");
-		chart1->Series["Series1"]->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Column;
+		chart1->Series["Series1"]->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Spline;
 		chart1->Series["Series1"]->Color = Color::Aqua;
 		chart1->Series["Series1"]->IsVisibleInLegend = false;
 		chart1->DataBind();

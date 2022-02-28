@@ -34,6 +34,13 @@ namespace Lab29 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^ Ù‡ÈÎToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem;
+	private: System::Windows::Forms::FolderBrowserDialog^ folderBrowserDialog1;
+	private: Microsoft::VisualBasic::Compatibility::VB6::FileListBox^ fileListBox1;
+	private: AxWMPLib::AxWindowsMediaPlayer^ axWindowsMediaPlayer1;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,17 +55,73 @@ namespace Lab29 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->Ù‡ÈÎToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
+			this->fileListBox1 = (gcnew Microsoft::VisualBasic::Compatibility::VB6::FileListBox());
+			this->axWindowsMediaPlayer1 = (gcnew AxWMPLib::AxWindowsMediaPlayer());
+			this->menuStrip1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->axWindowsMediaPlayer1))->BeginInit();
 			this->SuspendLayout();
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->Ù‡ÈÎToolStripMenuItem });
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(719, 24);
+			this->menuStrip1->TabIndex = 0;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// Ù‡ÈÎToolStripMenuItem
+			// 
+			this->Ù‡ÈÎToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem });
+			this->Ù‡ÈÎToolStripMenuItem->Name = L"Ù‡ÈÎToolStripMenuItem";
+			this->Ù‡ÈÎToolStripMenuItem->Size = System::Drawing::Size(48, 20);
+			this->Ù‡ÈÎToolStripMenuItem->Text = L"‘‡ÈÎ";
+			// 
+			// ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem
+			// 
+			this->ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem->Name = L"ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem";
+			this->ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem->Size = System::Drawing::Size(153, 22);
+			this->ÓÚÍ˚Ú¸‘‡ÈÎToolStripMenuItem->Text = L"ŒÚÍ˚Ú¸ Ù‡ÈÎ";
+			// 
+			// fileListBox1
+			// 
+			this->fileListBox1->FormattingEnabled = true;
+			this->fileListBox1->Location = System::Drawing::Point(589, 27);
+			this->fileListBox1->Name = L"fileListBox1";
+			this->fileListBox1->Pattern = L"*.*";
+			this->fileListBox1->Size = System::Drawing::Size(130, 446);
+			this->fileListBox1->TabIndex = 1;
+			// 
+			// axWindowsMediaPlayer1
+			// 
+			this->axWindowsMediaPlayer1->Enabled = true;
+			this->axWindowsMediaPlayer1->Location = System::Drawing::Point(13, 28);
+			this->axWindowsMediaPlayer1->Name = L"axWindowsMediaPlayer1";
+			this->axWindowsMediaPlayer1->OcxState = (cli::safe_cast<System::Windows::Forms::AxHost::State^>(resources->GetObject(L"axWindowsMediaPlayer1.OcxState")));
+			this->axWindowsMediaPlayer1->Size = System::Drawing::Size(570, 445);
+			this->axWindowsMediaPlayer1->TabIndex = 2;
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 261);
+			this->ClientSize = System::Drawing::Size(719, 505);
+			this->Controls->Add(this->axWindowsMediaPlayer1);
+			this->Controls->Add(this->fileListBox1);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
-			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->axWindowsMediaPlayer1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion

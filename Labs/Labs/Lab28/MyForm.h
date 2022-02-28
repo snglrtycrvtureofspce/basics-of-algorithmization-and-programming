@@ -129,7 +129,7 @@ namespace Lab28 {
 				array<String^>^ names = { "Иванов Иван", "Петров Пётр", "Сидоров Сидор", "Антонова Мария", "Вскрытие замков", "Справочная Служба", "Прогноз погоды", "Smith Jack",
 				"Рождественский Эдуард Ипполитович", "ЖЭС" };
 				array<String^>^ telephones = { "+375(44)353-53-230", "+375(13)333-333-333", "+343(33)223-43-21", "+376(33)342-24-31", "3434333", "324324320", "43434343","44324240", "43434343", "4334343" };
-			//	auto word2 = gcnew Microsoft::Office::Interop::Word::Application();
+				auto word2 = gcnew Microsoft::Office::Interop::Word::Application();
 				word2->Visible = true;
 				auto t = Type::Missing;
 				auto document2 = word2->Documents->Add(t, t, t, t);
@@ -141,8 +141,8 @@ namespace Lab28 {
 				{
 					try
 					{
-			//			word2->ActiveDocument->Tables[1]->Cell(i + 1, 1)->Range->InsertAfter(names[i]);
-			//			word2->ActiveDocument->Tables[1]->Cell(i + 1, 2)->Range->InsertAfter(telephones[i]);
+						word2->ActiveDocument->Tables[1]->Cell(i + 1, 1)->Range->InsertAfter(names[i]);
+						word2->ActiveDocument->Tables[1]->Cell(i + 1, 2)->Range->InsertAfter(telephones[i]);
 					}
 					catch (System::Runtime::InteropServices::COMException^ e)
 					{
@@ -151,7 +151,7 @@ namespace Lab28 {
 					}
 					Object^ t3 = Microsoft::Office::Interop::Word::WdUnits::wdLine;
 					Int32^ str10 = 10;
-			//		word2->Selection->MoveDown(t3, str10, t);
+					word2->Selection->MoveDown(t3, str10, t);
 					word2->Selection->TypeText("\tВ таблице перечислены номера телефонов и их владельцы\n");
 					Object^ fileName = "Lab28.docx";
 					word2->ActiveDocument->SaveAs(fileName, t, t, t, t, t, t, t, t, t, t, t, t, t, t, t);
@@ -159,7 +159,7 @@ namespace Lab28 {
 			}
 			catch (System::Expection^ e0)
 			{
-		//		textBox1->Text += e0->Message + "\t";
+				textBox1->Text += e0->Message + "\t";
 			}
 	}
 	};

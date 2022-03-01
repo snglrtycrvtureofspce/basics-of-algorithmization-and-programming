@@ -1,11 +1,9 @@
 #include "MyForm.h"
 #include <Windows.h>
-
 using namespace Lab29;
-
 System::STAThreadAttribute;
-[STAThreadAttribute]
 
+[STAThreadAttribute]
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	Application::EnableVisualStyles();

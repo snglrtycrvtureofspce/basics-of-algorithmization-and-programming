@@ -1,8 +1,0 @@
-C:\Users\asp1r\Desktop\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.vcxproj.AssemblyReference.cache
-C:\Users\asp1r\Desktop\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.vcxproj.SuggestedBindingRedirects.cache
-C:\Users\asp1r\Desktop\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.MyForm.resources
-C:\Users\asp1r\Desktop\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.vcxproj.GenerateResource.cache
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.vcxproj.AssemblyReference.cache
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.vcxproj.SuggestedBindingRedirects.cache
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.MyForm.resources
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course work\rentcalculator\rentcalculator\x64\Debug\rentcalculator.vcxproj.GenerateResource.cache

@@ -424,7 +424,7 @@ namespace Lab29 {
 		{
 			for (int j = 0; j < i && j < n; j++)
 			{
-				if(m[j] % 2 == 0)
+				if (m[j] % 2 == 0)
 				{
 					countCHET++;
 					count++;

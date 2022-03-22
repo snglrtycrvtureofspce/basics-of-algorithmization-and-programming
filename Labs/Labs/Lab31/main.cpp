@@ -10,8 +10,8 @@ using std::string;
 struct DataField // struct for for data storage
 {
 	string name = "";
-	int age = 0;
-	size_t intelligence_quotient = 0; // unsigned integer type
+	int unit_price = 0;
+	size_t number_of_units = 0; // unsigned integer type
 	void input(); // def prototype
 	void show(); // def prototype
 	void set_random(); // def prototype
@@ -25,27 +25,27 @@ struct BinarTree
 
 void DataField::input()
 {
-	cout << "Enter name: ";
+	cout << "Enter name of product : ";
 	cin >> name;
-	cout << "Enter IQ: ";
-	cin >> intelligence_quotient;
-	cout << "Enter age: ";
-	cin >> age;
+	cout << "Enter number of units: ";
+	cin >> number_of_units;
+	cout << "Enter unit price: ";
+	cin >> unit_price;
 };
 void DataField::show()
 {
-	cout << "Name: " << name << "\t IQ: " << intelligence_quotient << "\t Age: " << age << endl;
+	cout << "Name of product: " << name << "\t Number of units: " << number_of_units << "\t Unit price: " << unit_price << endl;
 }
 
 void DataField::set_random()
 {
-	age = rand() % 100;
+	unit_price = rand() % 100;
 	name = 'A' + rand() % ('Z' - 'A' + 1);
 	for (int i = 0; i < 5; i++)
 	{
 		name = 'a' + rand() % ('z' - 'a' + 1);
 	}
-	intelligence_quotient = 100 + rand() % 201;
+	number_of_units = 100 + rand() % 201;
 }
 void treeprint(BinarTree* tree);
 void treeprint_byname(string name, BinarTree* tree);

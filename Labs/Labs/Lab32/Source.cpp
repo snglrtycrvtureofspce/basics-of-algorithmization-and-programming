@@ -3,6 +3,8 @@
 #include <string>
 #include <list>
 
+#define in_range(x,y,z) for (int x = y; x < z; x++)
+
 using std::cout;
 using std::cin;
 using std::endl;
@@ -29,7 +31,7 @@ int multiplication_method_hash_function(const int k) // fun hash method multipli
 
 int find_substr(string t, string s) // fun search for a substring in a string
 {
-	int p = 97;
+	const int p = 97;
 	vector<int> p_pow(s.length()); // creation of an integer array p_pow by the constructor for the number of elements s.length() - how many elements are in the string s
 	p_pow[0] = 1;
 	/*
@@ -146,7 +148,7 @@ void main()
 	}
 	case 3:
 	{
-		vector<string>t, s, c;
+		vector<string>T, S, C;
 		int n = 0;
 		cout << "Enter count: "; cin >> n;
 		string tmp;
@@ -160,9 +162,9 @@ void main()
 			*/
 			if (tmp.length() == 1)
 			{
-				c.push_back(tmp); // puts any string into an array of strings t 
+				C.push_back(tmp); // puts any string into an array of strings t 
 			}
-			t.push_back(tmp);
+			T.push_back(tmp);
 		}
 		cout << "\nEnter -1 to exit: ";
 		/*
@@ -170,39 +172,39 @@ void main()
 		*/
 		while (cin >> tmp && tmp.compare("-1") != 0)
 		{
-			s.push_back(tmp); // we enter the desired substrings (words) into the array s until you enter -1 
+			S.push_back(tmp); // we enter the desired substrings (words) into the array s until you enter -1 
 		}
-		//for (int i = 0; i < s.size(); i++) // we pass through the array s from the desired strings (words) 
-		//{
-		//	string s = s[i];
-		//	if (s.empty()) // s == ""
-		//	{
-		//		continue;
-		//	}
-		//	if(s.length() == 1)
-		//	{
-		//		_in_range_(j,0,c.size()) ////////// in_range
-		//		{
-		//			string c = c[j];
-		//			if(s == c)
-		//			{
-		//				cout << s << "\n";
-		//				break;
-		//			}
-		//			continue;
-		//		}
-		//	}
-		//}
-		//for (int j = 0; j < n; j++) // Rabin Karp algorithm
-		//{
-		//	string T = t[j];
-		//	int pos = find_substr(T, s); ////////// s
-		//	if(pos >= 0)
-		//	{
-		//		cout << s << "\n";
-		//		break;
-		//	}
-		//}
+		for (int i = 0; i < S.size(); i++) // we pass through the array s from the desired strings (words) 
+		{
+			string s = S[i];
+			if (s == "")
+			{
+				continue;
+			}
+			if (s.length() == 1)
+			{
+				in_range(j, 0, C.size())
+				{
+					string c = C[j];
+					if (s == c)
+					{
+						cout << s << "\n";
+						break;
+					}
+					continue;
+				}
+			}
+			for (int j = 0; j < n; j++) // Rabin Karp algorithm
+			{
+				string t = T[j];
+				int pos = find_substr(t, s); ////////// s
+				if (pos >= 0)
+				{
+					cout << s << "\n";
+					break;
+				}
+			}
+		}
 		break;
 	}
 	case 4:
@@ -215,7 +217,7 @@ void main()
 		cout << "String: " << str2 << " hash code to this strings: " << find_hash_code_for_string(str2, hash_key, count_of_symbols_code) << endl;
 		break;
 	}
-	case 5: // list erase iterator outside range // problem in .end() or .pop_back() 
+	case 5: 
 	{
 		list<Car>li;
 		Car c(0);
@@ -225,7 +227,7 @@ void main()
 		Car c1(2);
 		li.push_back(c1);
 		Car c2(3);
-		li.push_back(c2);
+		li.push_front(c2);
 		Car c3(4);
 		li.push_front(c3); // push_front() - placing the element at the beginning of the list
 		Car c4(5);

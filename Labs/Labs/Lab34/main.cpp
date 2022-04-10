@@ -251,11 +251,11 @@ int main()
 			cout << "No memory.\n";
 			return 0;
 		}
-			for (int i = 0; i < n; i++)
-			{
-				a[i] = i + 1;
-			}
-			print_conjunction_without_repetition(a, m);
+		for (int i = 0; i < n; i++)
+		{
+			a[i] = i + 1;
+		}
+		print_conjunction_without_repetition(a, m);
 		if (n >= m)
 		{
 			while (next_set_conjunction_without_repetition(a, n, m))
@@ -278,14 +278,94 @@ int main()
 			cout << "No memory.\n";
 			return 0;
 		}
+		for (int i = 0; i < h; i++)
+		{
+			a[i] = 1;
+		}
+		print_conjunction_with_repetition(a, m);
+		while (next_set_conjunction_with_repetition(a, n, m))
+		{
+			print_conjunction_with_repetition(a, m);
+		}
+		delete[] a;
+		break;
+	}
+	case 5: // task
+	{
+		int n, m, * a;
+		cout << "N = "; cin >> n;
+		cout << "M = "; cin >> m;
+		int h = n > m ? n : m;
+		a = new int[h];
+		if (!a)
+		{
+			cout << "No memory.\n";
+			return 0;
+		}
+		cout << "Select an array location option: "; cin >> p;
+		switch (p)
+		{
+		case 1:
+		{
+			for (int i = 0; i < n; i++)
+			{
+				a[i] = i + 1; // fill with numbers in ascending order (lexicographic order) without repetitions
+			}
+			print_without_repetition(a, m);
+			while (next_set_without_repetition(a, n, m))
+			{
+				print_without_repetition(a, m);
+			}
+			break;
+		}
+		case 2:
+		{
+			for (int i = 0; i < h; i++)
+			{
+				a[i] = 1;
+			}
+			print_with_repetition(a, m);
+			while (next_set_with_repetition(a, n, m))
+			{
+				print_with_repetition(a, m);
+			}
+			break;
+		}
+		case 3:
+		{
+			for (int i = 0; i < n; i++)
+			{
+				a[i] = i + 1;
+			}
+			print_conjunction_without_repetition(a, m);
+			if (n >= m)
+			{
+				while (next_set_conjunction_without_repetition(a, n, m))
+				{
+					print_conjunction_without_repetition(a, m);
+				}
+			}
+			break;
+		}
+		case 4:
+		{
 			for (int i = 0; i < h; i++)
 			{
 				a[i] = 1;
 			}
 			print_conjunction_with_repetition(a, m);
-		while (next_set_conjunction_with_repetition(a, n, m))
+			while (next_set_conjunction_with_repetition(a, n, m))
+			{
+				print_conjunction_with_repetition(a, m);
+			}
+			break;
+		}
+		default:
 		{
-			print_conjunction_with_repetition(a, m);
+			system("CLS");
+			cout << "Some kind of mistake" << endl;
+			break;
+		}
 		}
 		delete[] a;
 		break;

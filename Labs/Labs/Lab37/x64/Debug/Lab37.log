@@ -1,2 +1,5 @@
 ﻿  main.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab37\main.cpp(75,34): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab37\main.cpp(83,6): warning C4554: "|": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab37\main.cpp(83,49): warning C4554: "|": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
   Lab37.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab37.exe

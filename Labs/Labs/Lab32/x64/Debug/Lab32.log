@@ -1,1 +1,6 @@
-﻿  Lab32.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab32.exe
+﻿  Source.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab32\Source.cpp(27,11): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab32\Source.cpp(93,20): warning C4244: инициализация: преобразование "double" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab32\Source.cpp(101,9): warning C4244: return: преобразование "unsigned __int64" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab32\Source.cpp(124,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Lab32.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab32.exe

@@ -106,11 +106,11 @@ unsigned int find_hash_code_for_string(string str, int key_hash, int count_of_sy
 /*
 working with a container - a dynamic list list< >.
 */
-struct Car
+struct participant
 {
 	int x;
-	Car(){}
-	Car(int x)
+	participant(){}
+	participant(int x)
 	{
 		this->x = x;
 	}
@@ -219,26 +219,26 @@ void main()
 	}
 	case 5: 
 	{
-		list<Car>li;
-		Car c(0);
+		list<participant>li;
+		participant c(0);
 		li.push_back(c); // push_back() - placing the element at the end of the list
-		Car c0(1);
+		participant c0(1);
 		li.push_back(c0);
-		Car c1(2);
+		participant c1(2);
 		li.push_back(c1);
-		Car c2(3);
+		participant c2(3);
 		li.push_front(c2);
-		Car c3(4);
+		participant c3(4);
 		li.push_front(c3); // push_front() - placing the element at the beginning of the list
-		Car c4(5);
+		participant c4(5);
 		li.push_front(c4);
 		/*
 		An iterator is an object that is capable of iterating over the elements of a container class without the user having to know the implementation of a particular container class.
 		In many containers (especially list and associative containers),
 		iterators are the primary way to access the elements of these containers.
 		*/
-		list<Car>::iterator j; // iterator j to save a pointer to an element of the car list
-		for (list<Car>::iterator i = li.begin(); i != li.end(); i++)
+		list<participant>::iterator j; // iterator j to save a pointer to an element of the car list
+		for (list<participant>::iterator i = li.begin(); i != li.end(); i++)
 		{
 			i->show();
 			if (i->x == 3)
@@ -250,7 +250,7 @@ void main()
 		li.pop_back(); // pop_back() - remove the last element of the list
 		li.pop_front(); // pop_front() - remove the first element of the list
 		li.erase(j); // remove element on pointer
-		for (list<Car>::iterator i = li.begin(); i != li.end(); i++)
+		for (list<participant>::iterator i = li.begin(); i != li.end(); i++)
 		{
 			(*i).show();
 		}

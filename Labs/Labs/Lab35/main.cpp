@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <queue>
 
 
 using namespace std;
@@ -226,71 +227,109 @@ void DFS7(int** graph, bool* visited, int st, int n)
 	}
 }
 
+////////////////////////////
+void printgrav(int** grav, int n)
+{
+for (int i = 0; i < n; i++) {
+	for (int j = 0; j < n; j++) {
+		cout << grav[i][j] << " ";
+	}
+	cout << endl;
+}
+}
+void dfsDeep(int** grav, bool* visited, int start, int n, int k)
+{
+	bool dell = false;
+	if (visited == nullptr) {
+		visited = new bool[n];
+		for (int i = 0; i < n; i++) {
+			visited[i] = false;
+		}
+		dell = true;
+	}
+	if (start + 1 == k) {
+		cout << "(" << start + 1 << ") ";
+	}
+	else {
+		cout << start + 1 << " ";
+	}
+	visited[start] = true;
+	for (int i = 0; i < n; i++) {
+		if ((grav[start][i] != 0) && (!visited[i])) {
+			dfsDeep(grav, visited, i, n, k);
+		}
+	}
+	if (dell) {
+		delete[] visited;
+	}
+	return;
+}
+////////////////////////////
 
 
 void main()
 {
+	//int n = 5;
+	//int** graph = new int* [n]
+	//{
+	//	new int[n]
+	//	{
+	//		0, 1, 0, 0, 1
+	//	},
+	//		new int[n]
+	//		{
+	//			1, 0, 1, 1, 0
+	//		},
+	//			new int[n]
+	//			{
+	//				0, 1, 0, 0, 1
+	//			},
+	//				new int[n]
+	//				{
+	//					0, 1, 0, 0, 1
+	//				},
+	//					new int[n]
+	//					{
+	//						1, 0, 1, 1, 0
+	//					}
+	//};
+	//bool* visited = new bool[n];
+	//if (!visited)
+	//{
+	//	cout << "No memory for boolean array.";
+	//	return;
+	//}
+	//cout << "Graph Adjacency Matrix:\n";
+	//for (int i = 0; i < n; i++)
+	//{
+	//	visited[i] = false;
+	//	for (int j = 0; j < n; j++)
+	//	{
+	//		cout << " " << graph[i][j];
+	//	}
+	//	cout << endl;
+	//}
+	//int start;
+	//do
+	//{
+	//	cout << "Starting top: "; cin >> start;
+	//} while (start < 1 || start > n);
+	//cout << "The order of traversal of the graph vertices in depth from the one you entered: ";
+	//DFS7(graph, visited, start - 1, n);
+	//cout << endl;
+	/////////////////////////////
 	int select = 0;
-	int n = 5;
-	int** graph = new int* [n]
-	{
-		new int[n]
-		{
-			0, 1, 0, 0, 1
-		},
-			new int[n]
-			{
-				1, 0, 1, 1, 0
-			},
-				new int[n]
-				{
-					0, 1, 0, 0, 1
-				},
-					new int[n]
-					{
-						0, 1, 0, 0, 1
-					},
-						new int[n]
-						{
-							1, 0, 1, 1, 0
-						}
-	};
-	bool* visited = new bool[n];
-	if (!visited)
-	{
-		cout << "No memory for boolean array.";
-		return;
-	}
-	cout << "Graph Adjacency Matrix:\n";
-	for (int i = 0; i < n; i++)
-	{
-		visited[i] = false;
-		for (int j = 0; j < n; j++)
-		{
-			cout << " " << graph[i][j];
-		}
-		cout << endl;
-	}
-	int start;
-	do
-	{
-		cout << "Starting top: "; cin >> start;
-	} while (start < 1 || start > n);
-	cout << "The order of traversal of the graph vertices in depth from the one you entered: ";
-	DFS7(graph, visited, start - 1, n);
-	cout << endl;
-	///////////////////////////
-	cout << "Select function: "; cin >> select;
+	cout << "Select function (only 6): "; cin >> select;
 	switch (select)
 	{
-	case 1:
-	{
-		vector <bool> visited(n + 1); // first you need to create dynamic arrays for the graph vector <data-type> name
-		vector <int> prev(n + 1, -1);
-		dfs1(start, visited, prev, g);
-		break;
-	}
-	case 2:
+	//case 1:
+	//{
+	//	vector <bool> visited(n + 1); // first you need to create dynamic arrays for the graph vector <data-type> name
+	//	vector <int> prev(n + 1, -1);
+	//	dfs1(start, visited, prev, g);
+	//	break;
+	//}
+	/*case 2:
 	{
 		vector <bool> visited(n + 1);
 		int ncomp = 0;
@@ -303,8 +342,8 @@ void main()
 			}
 		}
 		break;
-	}
-	case 3:
+	}*/
+	/*case 3:
 	{
 		vector <int> color(n + 1);
 		for (int i = 1; i <= n; ++i)
@@ -316,8 +355,8 @@ void main()
 			}
 		}
 		break;
-	}
-	case 4:
+	}*/
+	/*case 4:
 	{
 		vector <int> color(n + 1);
 		for (int i = 1; i <= n; ++i)
@@ -328,8 +367,8 @@ void main()
 			}
 		}
 		break;
-	}
-	case 5:
+	}*/
+	/*case 5:
 	{
 		vector <bool> visited(n + 1);
 		vector <int> ans;
@@ -342,10 +381,29 @@ void main()
 		}
 		reverse(ans.begin(), ans.end());
 		break;
-	}
+	}*/
 	case 6:
 	{
-		
+		int k; // стартовая вершина
+		cout << "Starting peak: ";
+		cin >> k;
+		int n = 8; // вершины
+		int** grav = new int* [n] {
+			new int[n] {0, 1, 0, 0, 0, 0, 1, 0},
+				new int[n] {0, 0, 0, 0, 1, 0, 0, 0},
+				new int[n] {0, 1, 0, 0, 0, 0, 0, 0},
+				new int[n] {0, 0, 0, 0, 0, 0, 0, 0},
+				new int[n] {0, 0, 0, 1, 0, 1, 0, 0},
+				new int[n] {0, 0, 0, 0, 0, 0, 1, 0},
+				new int[n] {0, 0, 0, 0, 0, 0, 0, 1},
+				new int[n] {1, 0, 0, 0, 0, 0, 0, 0},
+		};
+		printgrav(grav, n);
+		cout << "Bypass\n";
+		dfsDeep(grav, nullptr, 0, n, k);
+		cout << "\nÏðîõîä â øèðèíó\n";
+		queue<int> q;
+		q.push(0);
 		break;
 	}
 	default:
@@ -355,12 +413,12 @@ void main()
 		break;
 	}
 	}
-	delete[] visited;
+	/*delete[] visited;
 	visited = NULL;
 	for (int i = 0; i < n; i++)
 	{
 		delete[] graph[i];
 	}
 	delete[] graph;
-	graph = NULL;
+	graph = NULL;*/
 }

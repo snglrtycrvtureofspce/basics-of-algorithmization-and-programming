@@ -120,10 +120,83 @@ struct participant
 	}
 };
 
+//////////////
+struct Sportsman
+{
+	string country;
+	string team;
+	string name;
+	int number; 
+	int age;
+	int heigth;
+	int weigth;
+	void print()
+	{
+		std::cout << "Country: " + this->country + "\nTeam: " + this->team + "\nName: " + this->name + "\nNumber: " << this->number << "\nAge: " << this->age << "\nHeigth: " << this->heigth << "\nWeigth: " << this->weigth << "\nBMI:" << (this->weigth / (double)(this->heigth * this->heigth)) << "\n";
+	}
+};
+struct Hash {
+	void* data;
+	int length; 
+	int hash;
+	Hash* point = nullptr;
+};
+void allp(Hash* h) {
+	((Sportsman*)(h->data))->print();
+	if (h->point != nullptr) {
+		allp(h->point);
+	}
+	return;
+}
+void alld(Hash* h) {
+	delete h->data;
+	if (h->point != nullptr) {
+		allp(h->point);
+		delete h->point;
+	}
+	return;
+}
+static const uint8_t K[64] = {
+	0x98, 0x91, 0xcf, 0xa5, 0x5b, 0xf1, 0xa4, 0xd5,
+	0x98, 0x01, 0xbe, 0xc3, 0x74, 0xfe, 0xa7, 0x74,
+	0xc1, 0x86, 0xc6, 0xcc, 0x6f, 0xaa, 0xdc, 0xda,
+	0x52, 0x6d, 0xc8, 0xc7, 0xf3, 0x47, 0x51, 0x67,
+	0x85, 0x38, 0xfc, 0x13, 0x54, 0xbb, 0x2e, 0x85,
+	0xa1, 0x4b, 0x70, 0xa3, 0x19, 0x24, 0x85, 0x70,
+	0x16, 0x08, 0x4c, 0xb5, 0xb3, 0x4a, 0x4f, 0xf3,
+	0xee, 0x6f, 0x14, 0x08, 0xfa, 0xeb, 0xf7, 0xf2
+};
+
+void vhashf1(Hash* hash, uint64_t key) {
+	uint8_t* buf;
+	uint32_t l = 0;
+	{
+		uint32_t m = hash->length;
+		m += 64 - (m % 64);
+		l = m / 64;
+		buf = new uint8_t[m];
+		memcpy(buf, hash->data, hash->length);
+		for (int i = hash->length + 1; i < m; i++) {
+			buf[i] = K[i % 64];
+		}
+		//  *(uint64_t*)(buf + m/8+1) = hash->length;
+	}
+	uint64_t h = (uint32_t)K[key % 64] + key;
+	for (int i = 0; i < l; i++) {
+		uint64_t a = h + 1;
+		for (int j = 0; j < 64; j++) {
+			a += (((uint64_t)buf[i * 64 + j] + 0x01) * (uint64_t)K[j]) * a;
+		}
+		h += a;
+	}
+	hash->hash = h;
+	return;
+}
+////////////////
 void main()
 {
 	int select = 0;
-	cout << "Select function: "; cin >> select;
+	cout << "Select function (only 6): "; cin >> select;
 	switch (select)
 	{
 	case 1:
@@ -217,7 +290,7 @@ void main()
 		cout << "String: " << str2 << " hash code to this strings: " << find_hash_code_for_string(str2, hash_key, count_of_symbols_code) << endl;
 		break;
 	}
-	case 5: 
+	case 5:
 	{
 		list<participant>li;
 		participant c(0);
@@ -256,6 +329,106 @@ void main()
 		}
 		cout << endl;
 		li.clear(); // clear all list
+		break;
+	}
+	case 6:
+	{
+		list<Hash*> hashList;
+		int key;
+		cout << "\nEnter key:\n";
+		cin >> key;
+		cout << "[1] Add Structure\n[2] List structure hashes\n[3] Display all stored structures by hash\n[4] Delete all stored structures by hash\n[0] End the program\n";
+		int k = 5;
+		while (k != 0) {
+			cout << "\tEnter:\n";
+			cin >> k;
+			switch (k) {
+			case 1: {
+				Hash* h = new Hash;
+				Sportsman* s = new Sportsman;
+				cout << "Country: ";
+				cin >> s->country;
+				cout << "Team: ";
+				cin >> s->team;
+				cout << "Name: ";
+				cin >> s->name;
+				cout << "Number: ";
+				cin >> s->number;
+				cout << "Age: ";
+				cin >> s->age;
+				cout << "Heigth: ";
+				cin >> s->heigth;
+				cout << "Weigth: ";
+				cin >> s->weigth;
+				h->data = s;
+				h->length = sizeof(Sportsman);
+				vhashf1(h, key);
+				cout << "- generated hash: " << h->hash << "\n";
+				bool f = false;
+				for (auto i = hashList.begin(); i != hashList.end(); i++) {
+					if ((*i)->hash == h->hash) {
+						(*i)->point = h;
+						f = true;
+						break;
+					}
+				}
+				if (!f) {
+					hashList.push_back(h);
+				}
+				break;
+			}
+			case 2: {
+				std::cout << "Hash list:\n";
+				if (hashList.begin() == hashList.end()) {
+					cout << "\tthe list is empty\n";
+					break;
+				}
+				for (auto i = hashList.begin(); i != hashList.end(); i++) {
+					cout << "\t" << (*i)->hash << "\n";
+				}
+				break;
+			}
+			case 3: {
+				std::cout << "\tenter the hash:\n";
+				int h;
+				std::cin >> h;
+				bool f = false;
+				for (auto i = hashList.begin(); i != hashList.end(); i++) {
+					if ((*i)->hash == h) {
+						allp(*i);
+						f = true;
+						break;
+					}
+				}
+				if (!f) {
+					cout << "hash not found\n";
+				}
+				break;
+			}
+			case 4: {
+				cout << "\nenter the hash\n";
+				int h;
+				std::cin >> h;
+				bool f = false;
+				for (auto i = hashList.begin(); i != hashList.end(); i++) {
+					if ((*i)->hash == h) {
+						alld(*i);
+						delete (*i);
+						hashList.erase(i);
+						f = true;
+						cout << "hash not found\n";
+						break;
+					}
+				}
+				if (!f) {
+					cout << "hash not found\n";
+				}
+				break;
+			}
+			default:
+				break;
+			}
+		}
 		break;
 	}
 	default:

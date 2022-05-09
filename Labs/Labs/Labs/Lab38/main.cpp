@@ -1,239 +1,55 @@
 #include <iostream>
-#include <Windows.h>
+#define INF 9999999
 
 using namespace std;
 
 
-int sch = 0; // count struct in arr
-char choice = 0;
+const int V = 5; // Number of vertices in a graph
+int G[V][V] = { // Two-dimensional array of size 5x5 for the adjacency matrix to represent the weighted graph
+	{0, 9, 75, 0, 0},
+	{9, 0, 95, 19, 42},
+	{75, 95, 0, 51, 66},
+	{0, 19, 51, 0, 31},
+	{0, 42, 66, 31, 0}
+};
 
-struct lombard
+int main()
 {
-    char tovar[20];
-    int cena;
-    int kolichestvo;
-    bool empty;
+	int no_edge; // Number of ribs
+	int selected[V]; // array to keep track of selected vertices (selected vertex will be true, unselected will be false)
+	memset(selected, false, sizeof(selected)); // set all vertices to false initially
+	no_edge = 0;
+	selected[0] = true;
+	int x, y;
+	cout << "Edge:\this weight\n";
+	while (no_edge < V - 1) // go through all the edges (there are 1 less of them than all the vertices of the connected graph)
+	{ // for each vertex in the set With find all neighboring vertices, calculate the distance (weight) from the vertex selected in step 1
+		int min = INF;
+		x = 0; // closest to the vertex selected in step 1
+		y = 0;
+		for (int i = 0; i < V; i++)
+		{
+			if (selected[i])
+			{
+				for (int j = 0; j < V; j++)
+				{
+					if (!selected[j] && G[i][j]) // is this a vertex and it's not selected yet?
+					{
+						if (min > G[i][j]) // if the weight of this edge is less than the minimum
+						{
+							min = G[i][j]; // then we make this weight minimal
+							x = i; // We save the vertex number A
+							y = j; // We save the vertex number B
+						}
+					}
+				}
+			}
+		}
+		cout << x << " - " << y << ":\t" << G[x][y] << endl;
+		selected[y] = true;
+		no_edge++;
+		return 0;
+	}
 
-}l_arr[20];
 
-void poisk_po_tovary()
-{
-    if (!sch)
-    {
-        cout << "Enter something first!" << endl;
-    }
-    else {
-        cout << "Enter a product" << endl;
-        char w[20];
-        cin >> w;
-        bool flag = 1;
-        for (int i = 0; i < sch; i++)
-        {
-            if (strcmp(w, l_arr[i].tovar) == 0)
-            {
-                cout << "Product " << l_arr[i].tovar << endl;
-                cout << "Price  " << l_arr[i].cena << endl;
-                cout << "Pledge  " << l_arr[i].kolichestvo << endl;
-                flag = 0;
-            }
-            if (flag)
-                cout << "The search has not given any results" << endl;
-        }
-    }
-}
-
-void poisk_po_chene()
-{
-    if (!sch)
-    {
-        cout << "Enter something first!" << endl;
-    }
-    else {
-        cout << "Enter price" << endl;
-        int w;
-        cin >> w;
-        bool flag = 1;
-        for (int i = 0; i < sch; i++)
-        {
-            if (l_arr[i].cena == w)
-            {
-
-                cout << "Product " << l_arr[i].tovar << endl;
-                cout << "Price " << l_arr[i].cena << endl;
-                cout << "Pledge " << l_arr[i].kolichestvo << endl;
-                flag = 0;
-            }
-            if (flag)
-                cout << "The search has not given any results" << endl;
-        }
-    }
-}
-
-void del()
-{
-    cout << "\nEnter the number of the entry to be deleted" << endl;
-    int k;
-    cin >> k;
-    for (int i = k - 1; i < sch; i++)
-    {
-        l_arr[i] = l_arr[i + 1];
-    }
-    sch--;
-}
-
-void change()
-{
-    int c = 0, per = 0;
-    cout << "\nEnter entry number" << endl;
-    cin >> c;
-    do
-    {
-        cout << "1-to change the item" << endl;
-        cout << "2-to change the price" << endl;
-        cout << "3-to change the count" << endl;
-        cout << "4-to exit edit mode " << endl;
-        cout << "Enter: ";
-        cin >> per;
-        switch (per)
-        {
-        case 1: cout << "Product " << endl;
-            cin >> l_arr[c - 1].tovar;
-            break;
-        case 2: cout << "Price ";
-            cin >> l_arr[c - 1].cena;
-            break;
-        case 3: cout << "Count ";
-            cin >> l_arr[c - 1].kolichestvo;
-            break;
-            cin >> per;
-        }
-    } while (per != 4);
-}
-
-void dobavl()
-{
-    if (sch < 20)
-    {
-        cout << "Record number " << sch + 1 << endl;;
-        cout << "Product" << endl;
-        cin >> l_arr[sch].tovar;
-        cout << "Price" << endl; // добавить проверки
-        cin >> l_arr[sch].cena;
-        cout << "Count " << endl;
-        cin >> l_arr[sch].kolichestvo;
-        sch++;
-    }
-    else {
-        cout << "Entered maximum number of records ";
-    }
-}
-
-void out()
-{
-    int sw;  // switch
-    int o;   // number of structures to be output
-    cout << "1-if you want to display any record" << endl;
-    cout << "2-if you want to display all records" << endl;
-    cout << "Enter: ";
-    cin >> sw;
-    if (sw == 1)
-    {
-        cout << "Enter the number of the entry you want to display" << endl;
-        cout << "Enter: ";
-        cin >> o;
-        o--;
-        cout << "Product " << l_arr[o].tovar << endl;
-        cout << "Price " << l_arr[o].cena << endl;
-        cout << "Count " << l_arr[o].kolichestvo << endl;
-    }
-    if (sw == 2)
-    {
-        for (int i = 0; i < sch; i++)
-        {
-            cout << "Product " << l_arr[i].tovar << endl;
-            cout << "Price " << l_arr[i].cena << endl;
-            cout << "Count " << l_arr[i].kolichestvo << endl;
-        }
-    }
-    cout << endl;
-}
-
-int main() {
-    setlocale(LC_ALL, "");
-    char p;
-    cout << "Enter the number: ";
-    cin >> p;
-    switch (p)
-    {
-    case '1':
-    {
-        cout << "No entries yet" << endl;
-        do
-        {
-            cout << "\t\t\t\t\tWarehouse" << endl;
-            cout << "_______________________________________________________________________________________" << endl;
-            cout << "1 - Entering a new entry " << '\t';
-            cout << "2 - Output record(s) " << '\t';
-            cout << "3 - Changing an entry " << endl;
-            cout << "4 - Deleting an entry " << '\t';
-            cout << "5 - Search by product " << '\t';
-            cout << "6 - Search by price " << endl;
-            cout << "\t\t\t7 - Exiting the program" << endl;
-            cout << "Enter: ";
-            cin >> choice;
-            switch (choice)
-            {
-            case '1':
-            {
-                dobavl();
-                break;
-            }
-            case '2':
-            {
-                out();
-                break;
-            }
-            case '3':
-            {
-                change();
-                break;
-            }
-            case '4':
-            {
-                del();
-                break;
-            }
-            case '5':
-            {
-                poisk_po_tovary();
-                break;
-            }
-            case '6':
-            {
-                poisk_po_chene();
-                break;
-            }
-            case '7':
-            {
-                cout << "End of the program..." << endl;
-                system("pause");
-                return 0;
-            }
-            default:
-            {
-                cout << "Wrong number!" << endl;
-                cout << "Enter the value again." << endl;
-            }
-            }
-        } while (choice != '7');
-        break;
-    }
-    default:
-    {
-        cout << "Wrong number" << endl;
-        break;
-    }
-    }
-    system("pause");
-    return 0;
 }

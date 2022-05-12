@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab38\main.cpp(152,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab38\main.cpp(175,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Lab38.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\x64\Debug\Lab38.exe

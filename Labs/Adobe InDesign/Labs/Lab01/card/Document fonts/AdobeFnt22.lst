@@ -11,7 +11,7 @@ FullName:Gabriola
 MenuName:Gabriola
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\asp1r\Downloads\card\Document fonts\Gabriola.ttf
+OutlineFileName:C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Adobe InDesign\Labs\Lab01\card\Document fonts\Gabriola.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -34,7 +34,7 @@ FullName:Minion Pro
 MenuName:Minion Pro
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\asp1r\Downloads\card\Document fonts\MinionPro-Regular.otf
+OutlineFileName:C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Adobe InDesign\Labs\Lab01\card\Document fonts\MinionPro-Regular.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -60,7 +60,7 @@ FullName:Segoe UI Emoji
 MenuName:Segoe UI Emoji
 StyleBits:0
 WritingScript:Emoji
-OutlineFileName:C:\Users\asp1r\Downloads\card\Document fonts\seguiemj.ttf
+OutlineFileName:C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Adobe InDesign\Labs\Lab01\card\Document fonts\seguiemj.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -83,7 +83,7 @@ FullName:Cambria
 MenuName:Cambria
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\asp1r\Downloads\card\Document fonts\cambria.ttc
+OutlineFileName:C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Adobe InDesign\Labs\Lab01\card\Document fonts\cambria.ttc
 TTCOffset:32
 DataFormat:sfntData
 hasSVG:no
@@ -107,7 +107,7 @@ FullName:Cambria Math
 MenuName:Cambria Math
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\asp1r\Downloads\card\Document fonts\cambria.ttc
+OutlineFileName:C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Adobe InDesign\Labs\Lab01\card\Document fonts\cambria.ttc
 TTCOffset:380
 DataFormat:sfntData
 hasSVG:no

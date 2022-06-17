@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab07\Source.cpp(9,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Lab07.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\x64\Debug\Lab07.exe

@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(67,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(127,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(135,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(196,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(204,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(273,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(281,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab09\Source.cpp(345,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+  Lab09.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\x64\Debug\Lab09.exe

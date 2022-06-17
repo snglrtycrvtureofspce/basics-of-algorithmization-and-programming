@@ -1,9 +1,0 @@
-﻿  Source.cpp
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\HeaderZenevich.h(28,29): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\HeaderZenevich.h(46,36): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\HeaderZenevich.h(61,43): warning C4244: *=: преобразование "float" в "int", возможна потеря данных
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\HeaderZenevich.h(71,57): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\HeaderZenevich.h(76,33): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\HeaderZenevich.h(78,32): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
-C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab12\Source.cpp(10,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Lab12.vcxproj -> C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab12.exe

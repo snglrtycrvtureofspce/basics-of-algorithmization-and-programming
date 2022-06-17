@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab21\Source.cpp(27,15): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab21\Source.cpp(28,15): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Lab21.vcxproj -> C:\Users\asp1r\Desktop\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab21.exe

@@ -1,0 +1,12 @@
+﻿  COM-ссылка "WMPLib.1.0" является сборкой взаимодействия для элемента ActiveX "AxWMPLib.1.0", но была помечена на компоновку компилятором флагом /link. Эта COM-ссылка будет считаться ссылкой и не будет скомпонована.
+  MyForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab29\MyForm.h(41,66): warning C4947: Microsoft::VisualBasic::Compatibility::VB6::FileListBox: помечен как устаревший
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab29\MyForm.h(41,66): message : Сообщение: "Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862"
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab29\MyForm.h(79,1): warning C4947: Microsoft::VisualBasic::Compatibility::VB6::FileListBox: помечен как устаревший
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab29\MyForm.h(79,1): message : Сообщение: "Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862"
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab29\MyForm.h(322,47): warning C4101: e: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab29\MyForm.cpp(4,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Lab29.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\x64\Debug\Lab29.exe

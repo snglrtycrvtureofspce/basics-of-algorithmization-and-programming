@@ -1,4 +1,0 @@
-﻿  Source.cpp
-C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab03\Source.cpp(89,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\Lab03\Source.cpp(15,10): warning C4101: a: неиспользованная локальная переменная
-  Lab03.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\Programming\BasicsOfAlgorithmizationAndProgramming\Labs\x64\Debug\Lab03.exe

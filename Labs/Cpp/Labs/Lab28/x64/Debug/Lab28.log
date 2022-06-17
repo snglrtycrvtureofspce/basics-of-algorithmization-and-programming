@@ -1,0 +1,13 @@
+﻿  MyForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(117): warning C4309: инициализация: усечение константного значения
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(117): message : Сообщение диагностики возникло при импорте типа "Microsoft::Office::Interop::Word::_Document" из сборки "Interop.Microsoft.Office.Interop.Word.8.7, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null".
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(117): message : Сообщение диагностики возникло при импорте типа "Microsoft::Office::Interop::Word::Document" из сборки "Interop.Microsoft.Office.Interop.Word.8.7, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null".
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(136): warning C4309: инициализация: усечение константного значения
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(136): message : Сообщение диагностики возникло при импорте типа "Microsoft::Office::Interop::Word::Selection" из сборки "Interop.Microsoft.Office.Interop.Word.8.7, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null".
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(160,19): error C2039: "Expection": не является членом "System".
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(160,1): error C2061: синтаксическая ошибка: идентификатор "Expection"
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(160,4): error C2310: в блоках catch должен быть указан один тип
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.h(162,23): error C2065: e0: необъявленный идентификатор
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab28\MyForm.cpp(6,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...

@@ -1,0 +1,5 @@
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\x64\Debug\Lab26.vcxproj.AssemblyReference.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\x64\Debug\Lab26.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\x64\Debug\Lab26.MyForm.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\x64\Debug\Lab26.MyForm1.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\x64\Debug\Lab26.vcxproj.GenerateResource.cache

@@ -1,7 +1,7 @@
 ﻿  MyForm.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab25\MyForm.h(583,16): warning C4804: <: небезопасное использование типа "bool" в операции
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab25\MyForm.cpp(5,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\Lab25\MyForm.h(583,16): warning C4804: <: небезопасное использование типа "bool" в операции
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\Lab25\MyForm.cpp(5,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Создание кода...
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Lab25.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\x64\Debug\Lab25.exe
+  Lab25.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\x64\Debug\Lab25.exe

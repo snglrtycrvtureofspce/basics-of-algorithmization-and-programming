@@ -10,3 +10,7 @@ C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationA
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab25\x64\Debug\Lab25.vcxproj.SuggestedBindingRedirects.cache
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab25\x64\Debug\Lab25.MyForm.resources
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Labs\Lab25\x64\Debug\Lab25.vcxproj.GenerateResource.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\Lab25\x64\Debug\Lab25.vcxproj.AssemblyReference.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\Lab25\x64\Debug\Lab25.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\Lab25\x64\Debug\Lab25.MyForm.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Cpp\Labs\Lab25\x64\Debug\Lab25.vcxproj.GenerateResource.cache

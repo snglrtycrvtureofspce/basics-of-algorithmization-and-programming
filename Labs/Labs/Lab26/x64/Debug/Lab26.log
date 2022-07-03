@@ -3,5 +3,7 @@ C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationA
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\MyForm.h(237,35): warning C4101: e: неиспользованная локальная переменная
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\MyForm.h(241,37): warning C4101: e: неиспользованная локальная переменная
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\Lab26\MyForm.cpp(4,27): warning C4091: : пропускается слева от "System::STAThreadAttribute", когда ни одна переменная не объявлена
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   Lab26.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\Labs\Labs\x64\Debug\Lab26.exe
